@@ -1,13 +1,9 @@
 import axios from "axios";
 
-const DOMAIN_URL =
-  import.meta.env.MODE === "production"
-    ? "https://notes-aadil-mallick.onrender.com"
-    : "http://localhost:3000";
 const API_URL = "/api/users";
 
 const instance = axios.create({
-  baseURL: `${DOMAIN_URL}${API_URL}`,
+  baseURL: `${API_URL}`,
   headers: {
     Accept: "application/json",
   },
