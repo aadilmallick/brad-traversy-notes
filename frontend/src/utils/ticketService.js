@@ -2,7 +2,7 @@ import axios from "axios";
 
 const DOMAIN_URL =
   import.meta.env.MODE === "production"
-    ? "https://notes-aadil-mallick.onrender.com/"
+    ? "https://notes-aadil-mallick.onrender.com"
     : "http://localhost:3000";
 const API_URL = "/api/tickets";
 
